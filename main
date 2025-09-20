@@ -1,4 +1,15 @@
-print('Hello, World!')
 num1 = int(input("Введите первое целое число: "))
 num2 = int(input("Введите второе целое число: "))
 print(f"Сумма: {num1 + num2}")
+operation = input("Введите операцию (+, -, *, /): ")
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    result = num1 / num2
+else:
+    result = "Неизвестная операция"
+print(f"Результат: {result}")
